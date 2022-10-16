@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('assets/bg2.jpg') no-repeat center / cover;
+    color: white;
+    height : 100vh;
+    backdrop-filter: blur(3px) brightness(.3);
+}
+
+
+.main-header{
+    padding : 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: cursive;
+    background: linear-gradient(to right, rgb(223, 15, 15), rgb(13, 41, 222));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap : 5rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.dice-tab{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap : 3rem;
+}
+
+.dice > img{
+    height : 6rem;
+    cursor: pointer;
+}
+
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap : 3rem;
+}
+
+.button{
+    height : 5rem;
+    width: 7rem;
+    font-size: 2.5rem;
+    text-shadow: 0 0px 8px rgb(68, 255, 47);
+    font-family: cursive;
+    display: grid;
+    place-items: center;
+    border : 3px solid white;
+    border-image-source: radial-gradient(circle at top left, red, transparent 60%, rgb(30, 0, 255) );
+    border-image-slice: 2;
+    cursor : pointer;
+    transition: all .5s ease;
+}
+
+.button:hover{
+    background: radial-gradient(circle at top left, rgb(30, 0, 255), transparent 60%, red );
+    border : none;
+}
+
+.btn-background{
+    background: radial-gradient(circle at top left, rgb(30, 0, 255), transparent 60%, red );
+    transition: .5s ease;
+    border : none;
+}
+
+.msgs{
+    text-align: center;
+}
