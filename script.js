@@ -52,12 +52,12 @@ dice.addEventListener('click', ()=>{
             this.classList.add('btn-background');
             choice.innerHTML = `Selected Variable : ${btn.innerText}`
            if(btn.innerText == num){
+               point = point + 1;
                text = "You guessed it right!";
-                point++;
            }
            else{
-            text = "You guessed it wrong";
             point = point;
+            text = "You guessed it wrong";
         }
         })
     })
